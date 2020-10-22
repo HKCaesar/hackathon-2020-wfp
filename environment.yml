@@ -10,3 +10,5 @@ dependencies:
   - matplotlib
   - pillow
   - ipykernel
+  - scikit-learn
+  - pandas
