@@ -4,7 +4,7 @@
 ## Run the notebook on Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ec-better/hackathon-2020-wfp/master?urlpath=lab)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WFP-VAM/hackathon-2020-wfp/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WFP-VAM/hackathon-2020-wfp/master?urlpath=Crop-Type-Classification.ipynb)
 
 ## Enhancing Agricultural Mapping with BETTER Pipelines
 
