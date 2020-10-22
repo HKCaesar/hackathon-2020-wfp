@@ -1,84 +1,37 @@
-# hackathon-2020-binder-template
+# better-hackathon-2020-wfp
 
 
 ## Run the notebook on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ec-better/hackathon-2020-binder-template/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ec-better/hackathon-2020-wfp/master?urlpath=lab)
 
-## Using this template
+## Enhancing Agricultural Mapping with BETTER Pipelines
 
-This software repository contains a template for running a notebook on Binder.
+The UN World Food Programme is the world's largest humanitarian organization, assisting 100 million people in 88 countries. Timely and accurate mapping of agricultural activity using EO satellite data provides valuable information to improve the livelihood of vulnerable people and to respond to emergencies effectively.
 
-To create your own repository:
 
-- create a **public** repository on GitHub 
-- copy the contents of this repo in that repository 
-- update the `environment.yml` with the conda packages required to run the notebook(s)
-- create one or more notebooks to support the BETTER Hackathon 2020 activities
-- update the `README.md` file to update the Binder badge repository URL:
+Various factors can make agricultural mapping challenging:
 
-`https://mybinder.org/v2/gh/ec-better/{your repository name}/master?urlpath=lab`
+- Accessibility constraints due to conflict and hazards
+- Limited availability of ground-truth data
+- Frequent cloud cover
+- Predominance of small-holder agriculture
 
-### Setting the conda environment and the Jupyter kernel to run the notebook
 
-The conda environment and associated kernel is defined in the file `environment.yml` under the `.binder` folder.
+## Exercise Description
 
-The template provides an minimum set of python modules to run the template notebook example.
+The exercise will evaluate the impact of using and combining various types of data streams provided by the BETTER pipelines for crop type mapping in North-East Nigeria
 
-```yaml
-name: env_better
-channels:
-  - conda-forge
-  - terradue
-dependencies:
-  - ipykernel
-```
+The dataset provided to the participants include:
 
-Add any additional conda dependency with a new line after ` - ipykernel`, e.g.:
+- Filtered and unfiltered Sentinel-2 time-series data
+- SAR Sentinel-1 backscatter time-series data
+- Crop type information
 
-```yaml
-name: env_better
-channels:
-  - conda-forge
-  - terradue
-dependencies:
-  - ipykernel
-  - gdal
-```
+The data is provided in an analysis-ready format for point locations sampled from delineated agricultural fields acquired as part of a recent data collection campaign.
 
-**Don'ts**
+After a short introduction, participants develop their classification models based on the training data and subsequently apply them to a validation data set for inter-comparison of the quality of the crop type mapping outputs. The exercise can be performed using Binder or locally, after downloading the datasets.
 
-- Don't change the environment name, leave `env_better`
-- Don't remove the `ipykernel` dependency
-
-Below a real-life example:
-
-```yaml
-name: env_better
-channels:
-  - conda-forge
-  - terradue
-dependencies:
-  - cioppy
-  - gdal
-  - geopandas
-  - numpy
-  - matplotlib
-  - pillow
-  - ipykernel
-```
-
-## Understanding the contents of the `.binder` folder
-
-The `.binder` folder contains a docker file that sets the conda environment and associated kernel.
-
-If you need additional steps, you can create a bash script named `postBuild`. There's an example here: https://github.com/binder-examples/jupyterlab/blob/master/binder/postBuild
-
-More info here: https://mybinder.readthedocs.io/en/latest/using.html#share-computational-work-or-papers
-
-**Don'ts**
-
-- Don't change docker file
 
 ## Computing resources
 
@@ -86,7 +39,3 @@ Binder runs the experiments for free with computing resources provided by Google
 The notebook must target a computing environment with 2 GB of RAM
 
 After some inactivity, the docker container is culled. 
-
-## Additional guidelines
-
-There are a few knowledge base entries here https://knowledge.terradue.com/display/ELLIP/Ellip+Notebooks+user+guides showing how to common tasks with a Notebook 
