@@ -34,9 +34,13 @@ The data is provided in an analysis-ready format for point locations sampled fro
 After a short introduction, participants develop their classification models based on the training data and subsequently apply them to a validation data set for inter-comparison of the quality of the crop type mapping outputs. The exercise can be performed using Binder or locally, after downloading the datasets.
 
 
-## Computing resources
+### Computing resources
 
 Binder runs the experiments for free with computing resources provided by Google Cloud, OVH, GESIS Notebooks and the Turing Institute.
 The notebook must target a computing environment with 2 GB of RAM
 
 After some inactivity, the docker container is culled. 
+
+### Disclaimer
+
+Pleases note that the reference data contained in this repository is intended for the use in the BETTER hackathon only and shall not be used in any other context without prior consent from WFP-VAM.
