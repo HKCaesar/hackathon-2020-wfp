@@ -21,15 +21,15 @@ Various factors can make agricultural mapping challenging:
 
 ## Exercise Description
 
-The exercise will evaluate the impact of using and combining various types of data streams provided by the BETTER pipelines for crop type mapping in North-East Nigeria
+The exercise will evaluate the impact of using and combining various types of data streams provided by the BETTER pipelines over a region of interest in Adamawa, Nigeria.
 
 The dataset provided to the participants include:
 
 - Filtered and unfiltered Sentinel-2 time-series data
 - SAR Sentinel-1 backscatter time-series data
-- Crop type information
+- Crop type information for a set of training points
 
-The data is provided in an analysis-ready format for point locations sampled from delineated agricultural fields acquired as part of a recent data collection campaign.
+The data is provided in an analysis-ready format for point locations sampled from delineated agricultural fields acquired during a recent data collection campaign.
 
 After a short introduction, participants develop their classification models based on the training data and subsequently apply them to a validation data set for inter-comparison of the quality of the crop type mapping outputs. The exercise can be performed using Binder or locally, after downloading the datasets.
 
